@@ -1,0 +1,38 @@
+// {
+//   "compilerOptions": {
+//     "jsx": "react",  // This enables JSX for React
+//     "target": "ES6",     // Set a target ECMAScript version (ES6 is common)
+//     "module": "ESNext",  // Use ES modules
+//     "moduleResolution": "node",  // Resolve modules in Node.js style
+//     "esModuleInterop": true,     // Enable interop between CommonJS and ES modules
+//     "skipLibCheck": true,        // Skip type checking of all declaration files
+//     "strict": true               // Enable strict type checking options
+//   },
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": ["./tsconfig.node.json","**/*.spec.ts"] }
+//   ]
+// }
+
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}
+
